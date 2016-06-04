@@ -35,6 +35,10 @@ By far the second most popular language on the JVM. However, Kotlin is growing s
 
 Jetbrains secured a solid reputation with their IntelliJ platform, and Kotlin benefits greatly from this in various ways. The solid growth comes partly from their Android support (Android Studio supports Kotlin out of the box), partly from the fact that Kotlin is very easy to learn.
 
+# Clojure
+
+Rick Hickey struck a chord with the marriage of Lisp and the huge JDK library. Clojure has seen steady growth since the inception and the current functional programming interest isn't hurting.
+
 # Xtend
 
 Xtend is steadily growing after establishing itself as _the_ language for creating DSL's on the JVM platform (using Xtext usually)
