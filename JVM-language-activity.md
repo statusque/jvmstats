@@ -10,7 +10,7 @@ Search: *language:xyz pushed:>2016-05-01*, result >= 10
     Scala         2004      EPFL                6,508
     Clojure       2007      Clojure team        2,696
     Groovy        2003      Groovy team         1,865
-    Kotlin        2016      Jetbrains            1075
+    Kotlin        2016      Jetbrains           1,075
     Xtend         2011      Eclipse Foundation     73
     Frege         2011      Frege team             26
     Ceylon        2011      Red Hat                13
