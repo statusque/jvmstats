@@ -30,13 +30,13 @@ Even the best programmers are bad at both anticipating error situations, and fin
 
 * Do everything you can to have the compiler and build tools eliminate errors in the first place. If you care about your users, this includes using safe languages (Kotlin prevents NPE's, for instance), design-by-contract api's, employing every static analysis tool available, implement high coverage test suits and do code reviews.
 
-* Use queues whenever possible, not RPC. Preferably persistent queues with fail-over protocols. A huge class of errors just disappeared. Microservices may be marketing term of this decade, but small independent processes with queues between them is the *only* known way to write robust distributed systems.
+* Use queues whenever possible, not RPC. Preferably persistent queues with fail-over protocols. A huge class of errors just disappeared. Microservices may be the marketing term of this decade, but small independent processes with queues between them is the *only* known way to write robust distributed systems.
 
 ### Handle errors like a pro
 
-* Establish idioms and patterns for specific error situations and reuse them. For instance, do you really have to give up on network outages and database connection errors so easily? Use libraries and drivers that attempts auto-reconnects and fails gracefully when not succeeding. Build your own logic if need be.
+* Establish idioms and patterns for specific error situations and reuse them. For instance, do you really have to give up on network outages and database connection errors so easily? Use libraries and drivers that attempt auto-reconnects and fails gracefully when not succeeding. Build your own logic if need be and put it in a library.
 
-* Eliminate classes of errors, not specific bug reports. If you get a bug report saying "number format exception", you're likely to do that a few places in your code base. Find a general way to handle them, and fix all the places. Make sure you use the improved idea in the future. This is why you need to write (and document) utility libraries.
+* Get into the habit of eliminating classes of errors, not specific bug reports. If you get a bug report saying "number format exception", you're likely to do that a few places in your code base. Find a general way to handle them, and fix all the use sites. Make sure you use the improved idea in the future. This is why you need to write (and document) utility libraries.
 
 * Resume. That is, continue on the statement following the throwing statement. It's sad that so few languages support this powerful idiom. I encourage you to try this idea in Perl 6. For other languages, you'll have to resort to tricks.
 
