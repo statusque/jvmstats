@@ -90,9 +90,15 @@ That said, Haskell support exceptions and it even works with lazy evaluation, an
 
 ## Python, Ruby, Javascript, etc
 
-Python supports a try/except/else/finally construct. That said, it is not uncommon to see Python scripts not dealing much with exceptions at all. The "log exceptions we can't deal with" approach of Java is certainly frowned upon in certain circles.
+Python supports a try/except/else/finally construct. That said, it is not uncommon to see Python scripts not dealing much with exceptions at all. The "log exceptions we can't deal with" approach of Java is certainly frowned upon. We're not sure if "exit with a runtime error if we can't deal" is much better.
 
 Other dynamic languages have different details, but the philosophy is more or less the same.
+
+## Go
+
+Panic/recover somewhat resembles exceptions, but some people consider this an anti-pattern. The idiomatic way to do error handling, as stated by the language authors, is really multiple return values. Some find it elegant, others consider it a sightly improved C-era abomination.
+
+We'll let you decide for your own after reading <https://blog.golang.org/errors-are-values>
 
 ## Perl 6
 
